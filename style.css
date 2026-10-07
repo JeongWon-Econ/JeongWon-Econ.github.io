@@ -83,7 +83,7 @@ a:hover {
   width: 100%;
   aspect-ratio: 4 / 5;
   object-fit: cover;
-  border-radius: 3px;
+  border-radius: 50%;
 }
 
 h1,
