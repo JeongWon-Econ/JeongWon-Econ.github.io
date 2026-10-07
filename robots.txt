@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://jeongwon-econ.github.io/jeong.github.io/sitemap.xml
