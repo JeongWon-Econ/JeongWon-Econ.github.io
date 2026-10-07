@@ -17,7 +17,7 @@ body {
   background: var(--paper);
   color: var(--text);
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 17px;
+  font-size: 19px;
   line-height: 1.65;
 }
 
@@ -36,8 +36,8 @@ a:hover {
 }
 
 .site-nav {
-  width: min(100% - 40px, 920px);
-  min-height: 68px;
+  width: min(100% - 48px, 1080px);
+  min-height: 76px;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -52,8 +52,20 @@ a:hover {
 }
 
 .site-name {
-  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 20px;
   font-weight: 700;
+  line-height: 1.15;
+}
+
+.site-name-korean {
+  margin-top: 3px;
+  color: #8a94a3;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.04em;
 }
 
 .nav-links {
@@ -67,15 +79,15 @@ a:hover {
 
 .home-layout,
 .page-content {
-  width: min(100% - 40px, 820px);
-  margin: 54px auto 76px;
+  width: min(100% - 48px, 980px);
+  margin: 64px auto 84px;
 }
 
 .home-layout {
   display: grid;
-  grid-template-columns: 210px minmax(0, 1fr);
+  grid-template-columns: 270px minmax(0, 1fr);
   align-items: start;
-  gap: 42px;
+  gap: 52px;
 }
 
 .profile-photo {
@@ -94,13 +106,13 @@ h2 {
 
 h1 {
   margin: 0 0 20px;
-  font-size: clamp(28px, 4vw, 36px);
+  font-size: clamp(32px, 4vw, 40px);
   font-weight: 600;
 }
 
 h2 {
   margin: 0 0 12px;
-  font-size: 23px;
+  font-size: 26px;
   font-weight: 600;
 }
 
@@ -233,7 +245,7 @@ figcaption {
 }
 
 .site-footer {
-  width: min(100% - 40px, 820px);
+  width: min(100% - 48px, 980px);
   margin: 0 auto;
   padding: 18px 0 28px;
   border-top: 1px solid var(--rule);
@@ -243,13 +255,17 @@ figcaption {
 
 @media (max-width: 640px) {
   .site-nav {
-    width: min(100% - 32px, 920px);
-    min-height: 62px;
+    width: min(100% - 32px, 1080px);
+    min-height: 68px;
     gap: 12px;
   }
 
   .site-name {
-    font-size: 16px;
+    font-size: 17px;
+  }
+
+  .site-name-korean {
+    font-size: 12px;
   }
 
   .nav-links {
@@ -259,7 +275,7 @@ figcaption {
   .home-layout,
   .page-content,
   .site-footer {
-    width: min(100% - 32px, 820px);
+    width: min(100% - 32px, 980px);
   }
 
   .home-layout {
