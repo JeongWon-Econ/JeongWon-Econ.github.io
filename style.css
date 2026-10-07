@@ -134,6 +134,13 @@ h2 {
   margin: 0 0 22px;
 }
 
+.project .coauthors {
+  margin: -4px 0 12px;
+  color: var(--muted);
+  font-size: 15px;
+  font-style: italic;
+}
+
 .figure-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
