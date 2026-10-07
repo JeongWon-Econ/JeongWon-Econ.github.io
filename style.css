@@ -1,0 +1,285 @@
+:root {
+  color-scheme: light;
+  --navy: #3333b2;
+  --text: #243b53;
+  --muted: #627d98;
+  --rule: #d9e2ec;
+  --paper: #ffffff;
+  --canvas: #f8fafc;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--text);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  line-height: 1.65;
+}
+
+a {
+  color: var(--navy);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+a:hover {
+  color: #486581;
+}
+
+.site-header {
+  border-bottom: 1px solid var(--rule);
+}
+
+.site-nav {
+  width: min(100% - 40px, 920px);
+  min-height: 68px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.site-name,
+.nav-links a {
+  color: var(--navy);
+  text-decoration: none;
+}
+
+.site-name {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.nav-links {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a[aria-current="page"] {
+  font-weight: 700;
+}
+
+.home-layout,
+.page-content {
+  width: min(100% - 40px, 820px);
+  margin: 54px auto 76px;
+}
+
+.home-layout {
+  display: grid;
+  grid-template-columns: 210px minmax(0, 1fr);
+  align-items: start;
+  gap: 42px;
+}
+
+.profile-photo {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: 3px;
+}
+
+h1,
+h2 {
+  color: var(--navy);
+  line-height: 1.25;
+}
+
+h1 {
+  margin: 0 0 20px;
+  font-size: clamp(28px, 4vw, 36px);
+  font-weight: 600;
+}
+
+h2 {
+  margin: 0 0 12px;
+  font-size: 23px;
+  font-weight: 600;
+}
+
+.home-intro h1,
+.project h2 {
+  font-weight: 400;
+}
+
+.home-intro p {
+  margin: 0 0 18px;
+}
+
+.contact-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  margin-top: 28px !important;
+}
+
+.project {
+  padding: 0 0 34px;
+  margin: 0 0 34px;
+  border-bottom: 1px solid var(--rule);
+}
+
+.project:last-child {
+  border-bottom: 0;
+}
+
+.project p {
+  margin: 0 0 22px;
+}
+
+.figure-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: start;
+  gap: 20px;
+}
+
+figure {
+  margin: 0;
+}
+
+figure img {
+  display: block;
+  width: 100%;
+  background: var(--canvas);
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+}
+
+figure img {
+  height: 260px;
+  object-fit: contain;
+}
+
+.parent-composition {
+  object-fit: cover;
+  object-position: center;
+}
+
+figcaption {
+  padding-top: 8px;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+.page-heading {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 22px;
+}
+
+.page-heading h1 {
+  margin-bottom: 0;
+}
+
+.download-link {
+  flex-shrink: 0;
+}
+
+.cv-contact {
+  margin: -8px 0 30px;
+}
+
+.cv-section {
+  padding: 18px 0 8px;
+  border-top: 1px solid var(--rule);
+}
+
+.cv-section h2 {
+  margin-bottom: 14px;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.cv-section p {
+  margin: 4px 0;
+}
+
+.cv-entry {
+  margin: 0 0 18px;
+}
+
+.cv-entry > strong {
+  color: var(--navy);
+}
+
+.cv-entry p {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.cv-entry p > span:last-child {
+  flex-shrink: 0;
+  color: var(--muted);
+  font-style: italic;
+}
+
+.site-footer {
+  width: min(100% - 40px, 820px);
+  margin: 0 auto;
+  padding: 18px 0 28px;
+  border-top: 1px solid var(--rule);
+  color: var(--muted);
+  font-size: 14px;
+}
+
+@media (max-width: 640px) {
+  .site-nav {
+    width: min(100% - 32px, 920px);
+    min-height: 62px;
+    gap: 12px;
+  }
+
+  .site-name {
+    font-size: 16px;
+  }
+
+  .nav-links {
+    gap: 14px;
+  }
+
+  .home-layout,
+  .page-content,
+  .site-footer {
+    width: min(100% - 32px, 820px);
+  }
+
+  .home-layout {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    margin-top: 34px;
+  }
+
+  .profile-photo {
+    width: min(210px, 65%);
+  }
+
+  .figure-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .page-heading {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .cv-entry p {
+    display: block;
+  }
+
+  .cv-entry p > span:last-child {
+    display: block;
+  }
+}
