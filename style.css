@@ -127,6 +127,10 @@ h2 {
   font-weight: 400;
 }
 
+.project h2 {
+  font-size: 22px;
+}
+
 .home-intro p {
   margin: 0 0 18px;
 }
