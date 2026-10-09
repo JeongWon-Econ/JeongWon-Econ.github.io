@@ -152,6 +152,12 @@ h2 {
   border-bottom: 0;
 }
 
+.project-compact {
+  padding: 0;
+  margin-bottom: 18px;
+  border-bottom: 0;
+}
+
 .project p {
   margin: 0 0 22px;
 }
