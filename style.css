@@ -132,9 +132,14 @@ h2 {
 }
 
 .project-details summary {
+  list-style: none;
   color: var(--navy);
   cursor: pointer;
   line-height: 1.25;
+}
+
+.project-details summary::-webkit-details-marker {
+  display: none;
 }
 
 .project-details .project-title {
@@ -144,10 +149,22 @@ h2 {
 
 .project-details .coauthors {
   display: block;
-  margin: 8px 0 20px;
+  margin: 8px 0 0;
   color: var(--muted);
   font-size: 15px;
   font-style: italic;
+}
+
+.project-details summary::after {
+  display: block;
+  margin-top: 8px;
+  color: var(--muted);
+  content: "▾";
+  font-size: 18px;
+}
+
+.project-details[open] summary::after {
+  content: "▴";
 }
 
 .project-details summary:hover {
