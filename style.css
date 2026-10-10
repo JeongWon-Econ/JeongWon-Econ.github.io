@@ -110,6 +110,10 @@ h1 {
   font-weight: 600;
 }
 
+.section-heading {
+  font-size: 26px;
+}
+
 .section-note {
   margin: -12px 0 24px;
   color: var(--muted);
