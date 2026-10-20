@@ -239,7 +239,8 @@ figure img {
 }
 
 .parent-composition {
-  object-fit: cover;
+  height: auto;
+  object-fit: contain;
   object-position: center;
 }
 
