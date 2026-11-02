@@ -159,6 +159,13 @@ h2 {
   font-size: 22px;
 }
 
+.project-details .project-funding {
+  display: block;
+  margin-top: 6px;
+  color: #555;
+  font-size: 15px;
+}
+
 .project-details .coauthors {
   display: block;
   margin: 18px 0 0;
