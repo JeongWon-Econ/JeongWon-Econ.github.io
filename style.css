@@ -162,8 +162,8 @@ h2 {
 .project-details .project-funding {
   display: block;
   margin-top: 6px;
-  color: #555;
-  font-size: 15px;
+  color: teal;
+  font-size: 22px;
 }
 
 .project-details .coauthors {
