@@ -174,18 +174,6 @@ h2 {
   font-style: italic;
 }
 
-.project-details summary::after {
-  display: block;
-  margin-top: 8px;
-  color: var(--muted);
-  content: "▾";
-  font-size: 18px;
-}
-
-.project-details[open] summary::after {
-  content: "▴";
-}
-
 .project-details summary:hover {
   text-decoration: underline;
   text-underline-offset: 3px;
