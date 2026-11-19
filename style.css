@@ -236,6 +236,12 @@ h2 {
   gap: 20px;
 }
 
+.figure-grid--three figure:nth-child(3) {
+  grid-column: 1 / -1;
+  width: calc(50% - 10px);
+  justify-self: center;
+}
+
 figure {
   margin: 0;
 }
@@ -367,6 +373,11 @@ figcaption {
 
   .figure-grid {
     grid-template-columns: 1fr;
+  }
+
+  .figure-grid--three figure:nth-child(3) {
+    grid-column: auto;
+    width: 100%;
   }
 
   .page-heading {
